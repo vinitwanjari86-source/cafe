@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzi Cafe</title>
+    <link rel="stylesheet" href="farzi.css">
+    <link rel="stylesheet" href="farzi.js">
+</head>
+<body>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>☕ Farzi Café</h2>
+                <p>Experience the taste of freshly brewed coffee and delicious bites in the heart of Nagpur.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i>Dharampeth  Nagpur, Maharashtra</p>
+                <p><i class="fas fa-phone"></i> +91 8600777666</p>
+                <p><i class="fas fa-envelope"></i> @farzi.cafenagpur</p>
+                
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/farzi.cafenagpur" target="_blank">
+                <i class="fab fa-instagram"></i>
+                <img src="image.png" alt="" height="30px">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Nagpur's Best Café | Designed with ❤️</p>
+        </div>
+    </footer>
+    
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <button onclick="goBack()" style="padding: 10px 20px; font-size: 20px; cursor: pointer;">Back</button>
+    </div>
+
+    <script>
+        // Function to open the popup
+        function openPopup(card) {
+            var imageSrc = card.querySelector('img').src;
+            document.getElementById("popup-img").src = imageSrc;
+            document.getElementById("popup-modal").style.display = "flex";
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup-modal").style.display = "none";
+        }
+
+        // Function to go back to loc1.html
+        function goBack() {
+            window.location.href = "farzi1.html";
+        }
+    </script>
+    
+</body>
+</html>
